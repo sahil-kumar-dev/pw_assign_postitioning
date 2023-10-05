@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<style>
+	.container{
+		position: relative;
+	}
+	.box{
+		height: 100px;
+		width: 100px;
+		background-color: var(--color);
+		position: absolute;
+	}
+	.box-1{
+		z-index: 1;
+		left: 50px;
+	}
+	.box-2{
+		z-index: 2;
+		left: 100px;
+	}
+	.box-3{
+		z-index: 3;
+		left: 150px;
+	}
+	.box-4{
+		z-index: 4;
+		left: 200px;
+	}
+</style>
+<body>
+	
+	<!-- Z index means the position of the element in the z axis. The element with higher z index will be ahead of all the elements on the webpage and the element with the lower z index will be behind all the element on the webpage. -->
+	<div class="container">
+		<div class="box box-1" style="--color:red"></div>
+		<div class="box box-2" style="--color:green"></div>
+		<div class="box box-3" style="--color:blue"></div>
+		<div class="box box-4" style="--color:orange"></div>
+	</div>
+</body>
+</html>
