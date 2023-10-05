@@ -1,0 +1,4 @@
+Question: Explain the difference between Absolute and Realative positioning.
+
+Answer: When we apply position relative to an element, it is positioned relative to its normal position in the document flow. This means that if you move the element using properties like top, right, bottom, or left, it will be moved relative to its original position.
+         With position absolute are positioned relative to their nearest positioned ancestor (an element with a position value other than static, usually relative, absolute, or fixed) or to the initial containing block if no positioned ancestor is found. This allows you to place an element anywhere within a parent element or the viewport.

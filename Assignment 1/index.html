@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Position</title>
+</head>
+<style>
+	body{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100vh;
+	}
+	.outer-box {
+		width: 120px;
+		height: 120px;
+		border: 2px solid black;
+		position: relative;
+
+	}
+
+	.box {
+		height: 50px;
+		width: 50px;
+		background-color: aquamarine;
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		border: 1px solid yellow;
+	}
+
+	.box-1 {
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		z-index: -10;
+	}
+
+	.box-2 {
+		left: 0px;
+	}
+
+	.box-3 {
+		right: 0px;
+	}
+
+	.box-4 {
+		bottom: 0px;
+	}
+
+	.box-5 {
+		right: 0px;
+		bottom: 0px;
+	}
+</style>
+
+<body>
+	<div class="outer-box">
+		<div class="box box-1">A</div>
+		<div class="box box-2">B</div>
+		<div class="box box-3">C</div>
+		<div class="box box-4">D</div>
+		<div class="box box-5">E</div>
+	</div>
+</body>
+
+</html>
